@@ -34,7 +34,17 @@ def ListaEntrenador():
         print(l)
 
 def BorraPorVida(vida):
-    
+        for i in range(1,len(LisTu)):
+            j=i
+            while j>=0 and LisTu[j-1].vida > LisTu[j].vida:
+                LisTu[j-1], LisTu[j] = LisTu[j], LisTu[j-1]
+                j-=1
+        #Busqueda lineal
+        for i, p in enumerate(LisTu):
+            if p.vida == vida:
+                LisTu.pop(i)
+                print(f"Pokemon con vida {vida} eliminado.")
+                return
         print("No se encontró pokemon con ese valor de vida")
         
 def PeleaPokemon():
