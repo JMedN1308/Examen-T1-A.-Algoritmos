@@ -55,18 +55,18 @@ CrearEntrenador("Misty", "Piplup")
 opc = 0
 while opc != 5:
     opc = input("Opciones:\n1. Agregar Entrenador(a)\n2. Mostrar Todo\n3. Borrar Pokemon\n4. Pelear\n5. Salir\nIngrese número de opción: ")
-    if opc == 1:
+    if opc == "1":
         print("Agregar combo inseparable.-")
         Torena = input("Ingrese nombre del Trainer: ")
         Poke = input("Ingrese el nombre del Pokemon: ")
         CrearEntrenador(Torena,Poke)
         
-    elif opc ==2:
+    elif opc =="2":
         ListaEntrenador()
         
-    elif opc == 3:
+    elif opc == "3":
         break
-    elif opc == 4:
+    elif opc == "4":
         break
-    elif opc == 5:
+    elif opc == "5":
         break
